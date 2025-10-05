@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samruddhi Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: rgb(0, 0, 31);
+      color: antiquewhite;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(0, 0, 39);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(153, 153, 228);
+      font-size: 1.04rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 80px 0;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+
+    .firstsection>div {
+      width: 30%;
+    }
+
+    .leftsection {
+      font-size: 2rem;
+    }
+
+    .rightsection img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .purple {
+      color: blueviolet;
+    }
+
+    .text-grey {
+      color: gray;
+    }
+
+    #element {
+      color: rgb(111, 54, 160);
+      font-weight: bold;
+    }
+
+    .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    main hr {
+      border: 0;
+      background-color: rgb(87, 37, 139);
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .secondsection h1 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+    }
+
+    .secondsection .box {
+      background: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .secondsection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Samruddhi Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, my name is <span class="purple">Samu</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+      </div>
+
+      <div class="rightsection">
+        <img
+          src="https://thumbs.dreamstime.com/b/software-developer-freelancer-working-program-code-software-developer-freelancer-woman-female-glasses-work-program-158245471.jpg"
+          alt="coding girl" />
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="secondsection">
+      <span class="text-grey">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
